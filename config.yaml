@@ -5,14 +5,14 @@ settings:
   daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  allmonitorsOperational: '所有系统运行正常' # 'All Systems Operational'
+  notAllmonitorsOperational: '并非所有系统都在运行' # 'Not All Systems Operational'
+  monitorLabelOperational: '运行状态' # 'Operational'
+  monitorLabelNotOperational: '非运行状态' # 'Not Operational'
+  monitorLabelNoData: '无数据' # 'No data'
+  dayInHistogramNoData: '无数据' # 'No data'
+  dayInHistogramOperational: '一切顺利' # 'All good'
+  dayInHistogramNotOperational: '事件数' # ' incident(s)' # xx incident(s) recorded
 
 monitors:
   - id: workers-cloudflare-com # unique identifier
@@ -41,7 +41,7 @@ monitors:
   - id: 3D-yuansuzhouqibiao
     name: 元素周期表
     description: '元素周期表'
-    url: 'https://v2ray.617000.xyz:55555'
+    url: 'https://v2ray.617000.xyz:55555/'
     method: GET
     expectStatus: 200
 
@@ -51,3 +51,11 @@ monitors:
     url: 'http://jb.zhoujian.serv00.net/'
     method: GET
     expectStatus: 200
+
+  - id: bot-617000-NextChat
+    name: NextChat
+    description: 'NextChat'
+    url: 'https://bot.617000.xyz/'
+    method: GET
+    expectStatus: 200
+    
