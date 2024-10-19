@@ -2,7 +2,7 @@ settings:
   title: 'Status Page'
   url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -35,5 +35,12 @@ monitors:
   - id: blog-cloudflare-com
     name: The Cloudflare Blog
     url: 'https://blog.cloudflare.com/'
+    method: GET
+    expectStatus: 200
+
+  - id: 3D-yuansuzhouqibiao
+    name: 元素周期表
+    description: '元素周期表'
+    url: 'https://v2ray.617000.xyz:55555'
     method: GET
     expectStatus: 200
