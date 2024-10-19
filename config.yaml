@@ -38,13 +38,6 @@ monitors:
     method: GET
     expectStatus: 200
 
-  - id: 3D-yuansuzhouqibiao
-    name: 元素周期表
-    description: '元素周期表'
-    url: 'https://v2ray.617000.xyz:55555/'
-    method: GET
-    expectStatus: 200
-
   - id: jetbrains
     name: jetbrains 激活码
     description: '激活码'
